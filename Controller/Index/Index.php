@@ -11,7 +11,7 @@ class Index extends \Magento\Framework\App\Action\Action
     /**
      * @var PageFactory
      */
-    protected $_pageFactory;
+    protected $pageFactory;
 
     /**
      * Constructor
@@ -24,7 +24,7 @@ class Index extends \Magento\Framework\App\Action\Action
         PageFactory $pageFactory
     ) {
         parent::__construct($context);
-        $this->_pageFactory = $pageFactory;
+        $this->pageFactory = $pageFactory;
     }
 
     /**
@@ -34,6 +34,6 @@ class Index extends \Magento\Framework\App\Action\Action
      */
     public function execute()
     {
-        return $this->_pageFactory->create();
+        return $this->pageFactory->create();
     }
 }
