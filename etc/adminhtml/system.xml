@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="gymbeam" translate="label" sortOrder="500">
+            <label>GymBeam</label>
+        </tab>
+        <section id="gymbeam_casestudy" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Greeting</label>
+            <tab>gymbeam</tab>
+            <resource>GymBeam_CaseStudy::gymbeam_casestudy</resource>
+            
+            <group id="configuration" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Configuration</label>
+				
+                <field id="greeting_text" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Greeting Text</label>
+                </field>
+            </group>
+			
+        </section>
+    </system>
+</config>
